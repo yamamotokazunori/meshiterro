@@ -13,9 +13,11 @@
         ♥<%= @post_image.favorites.count %> いいね
       <% end %>
     </p>
+  <% else %>
     <p>
       <%= link_to post_image_favorites_path(@post_image), method: :post do %>
-        ♡<%= @post_image.faverites.count %>いいね
+        ♡<%= @post_image.favorites.count %>いいね
+      <% end %>
     </p>
   <% end %>
 </div>
